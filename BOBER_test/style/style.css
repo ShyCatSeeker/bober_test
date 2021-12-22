@@ -1,0 +1,72 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+.logo
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 80px;
+	width: 100%;
+	background: #E5E5E5;
+}
+
+
+/* Главная страница */
+.main-p-div
+{
+	display: block; 
+	width: 60%; 
+	margin-left: auto; 
+	margin-right: 
+	auto; 
+	text-align: center; 
+	margin-top: 200px; 
+	border: 1px solid #4EAD00; 
+	border-radius: 5px;
+}
+.main-p-ul
+{
+	list-style-type: none; 
+	line-height: 2.5; 
+	padding: 0px 30px 10px 30px;
+}
+
+.main-p-link-1
+{
+	color: #4EAD00; 
+	text-decoration: none; 
+	font-size: 20pt;
+}
+
+.main-p-link-2
+{
+	color: #7FC700; 
+	text-decoration: none; 
+	font-size: 20pt;
+}
+
+.main-p-link-1:hover, .main-p-link-2:hover
+{
+	text-decoration: underline;
+}
+
+/* Шрифты */
+.fnt
+{
+	font-family: 'RubikRegular';
+}
+
+@font-face {
+  font-family: 'RubikRegular';
+  src: url('font/Rubik.eot'); /* IE9 Compat Modes */
+  src: url('font/Rubik.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('font/Rubik.woff2') format('woff2'), /* Super Modern Browsers */
+       url('font/Rubik.woff') format('woff'), /* Pretty Modern Browsers */
+       url('font/Rubik.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('font/Rubik.svg#svgFontName') format('svg'); /* Legacy iOS */
+}

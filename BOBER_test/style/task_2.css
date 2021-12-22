@@ -1,0 +1,64 @@
+/* Контейнер слайдера */
+.slider-container
+{
+	padding: 10px;
+	max-width: 1296px;
+	height: auto;
+	margin: 0 auto 0 auto;
+}
+
+/* Адаптив изображений */
+image
+{
+	width: 100%;
+	height: auto;
+}
+
+/* Стили для стрелки "Назад" */
+.slick-prev
+{
+	visibility: hidden;
+	margin-left: 20px;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 10;
+	position: absolute;
+	background: none;
+	border: none;
+}
+
+/* Стили для стрелки "Вперед" */
+.slick-next
+{
+	margin-right: 20px;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 10;
+	position: absolute;
+	justify-content: flex-end;
+	background: none;
+	border: none;
+}
+
+hr
+{
+	border: 1px solid #E5E5E5
+}
+
+/* Адаптив для стрелок */
+@media (max-width: 425px)
+{
+	.arrow-img
+	{
+		height: 23px;
+		width: auto;
+	}
+
+	.arrow-img
+	{
+		height: 23px;
+		width: auto;
+	}
+}

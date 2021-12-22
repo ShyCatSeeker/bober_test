@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Задание 4 </title>
+	<link rel="stylesheet" type="text/css" href="../style/style.css">
+	<link rel="stylesheet" type="text/css" href="../style/task_4.css">
+	<script src="../jQuery/jquery-3.6.0.min.js"></script>
+	<script src="filter.js"></script>
+</head>
+<body>
+	<header>
+		<!-- Логотип -->
+		<div class="logo">
+		<a href="../index.html"> <image src="../images/bober_1.png"> </a>
+		</div>
+	</header>
+
+	<main>
+		<div class="container">
+			<!-- Фильтры -->
+			<h2> Фильтр записей </h2>
+			<div class="filter-row">
+			    <input type="text" class="input-status" id="input" placeholder="Статус заявки">
+			    <button class="btn-apply" id="apply"> Применить </button>
+			    <button class="btn-reset" id="reset"> Сбросить </button>
+		    </div>
+		    <div class="filter-row">
+		    	<span> от </span>
+			    <input type="date" class="input-date" id="date-b">
+			    <span> до </span>
+			    <input type="date" class="input-date" id="date-e">
+		    </div>
+		    <div class="filter-row">
+		    	<select class="select-date" id="fixed-date">
+		    		<option> Сегодня </option>
+		    		<option> Вчера </option>
+		    		<option> За неделю </option>
+		    		<option> За месяц </option>
+		    	</select>
+		    </div>
+			<hr>
+			<!-- Таблица -->
+			<div class="table-row">
+				<table class="table"> 
+					<thead>
+						<tr>
+							<th class="th-1"> № Заявки </th>
+							<th class="th-2"> Имя </th>
+							<th class="th-1"> Номер телефона </th>
+							<th class="th-2"> Email </th>
+							<th class="th-1 status"> Статус заявки </th>
+							<th class="th-2"> Дата добавления </th>
+						</tr>
+				    </thead>
+				    <tbody id="tbody">
+				    	<tr>
+				    		<td class="td"> У-426584 </td>
+				    		<td class="td"> Ирина </td>
+				    		<td class="td"> 8(812) 355-33-98 </td>
+				    		<td class="td"> golden26@wiegand.com </td>
+				    		<td class="td status">Новая</td>
+				    		<td class="td date">02.11.2021</td>
+				    	</tr>
+				    	<tr>
+				    		<td class="td"> В-426585 </td>
+				    		<td class="td"> Василий </td>
+				    		<td class="td"> 8-800-843-1101 </td>
+				    		<td class="td"> misael.kozey@yahoo.com </td>
+				    		<td class="td status">В работе</td>
+				    		<td class="td date">03.11.2021</td>
+				    	</tr>
+				    	<tr>
+				    		<td class="td"> У-426586 </td>
+				    		<td class="td"> Глеб </td>
+				    		<td class="td"> 7 (922) 640-1895 </td>
+				    		<td class="td"> gdamore@kuphal.net </td>
+				    		<td class="td status">В работе</td>
+				    		<td class="td date">03.11.2021</td>
+				    	</tr>
+				    	<tr>
+				    		<td class="td"> Р-426587 </td>
+				    		<td class="td"> Марина </td>
+				    		<td class="td"> (812) 964-52-50 </td>
+				    		<td class="td"> dsenger@gmail.com </td>
+				    		<td class="td status">Новая</td>
+				    		<td class="td date">03.11.2021</td>
+				    	</tr>
+				    	<tr>
+				    		<td class="td"> У-426588 </td>
+				    		<td class="td"> Дарья </td>
+				    		<td class="td"> 7 (922) 954-2519 </td>
+				    		<td class="td"> gonzalo44@gmail.com </td>
+				    		<td class="td status">Завершена</td>
+				    		<td class="td date">29.10.2021</td>
+				    	</tr>
+				    	<tr>
+				    		<td class="td"> Г-426589 </td>
+				    		<td class="td"> Иван </td>
+				    		<td class="td"> (495) 135-6269 </td>
+				    		<td class="td"> horacio.stark@zboncak.com </td>
+				    		<td class="td status">Новая</td>
+				    		<td class="td date">29.10.2021</td>
+				    	</tr>
+				    	<tr>
+				    		<td class="td"> У-426590 </td>
+				    		<td class="td"> Виталий </td>
+				    		<td class="td"> 8-800-651-0333 </td>
+				    		<td class="td"> dora.eichmann@weber.com </td>
+				    		<td class="td status">Завершена</td>
+				    		<td class="td date">30.10.2021</td>
+				    	</tr>
+				    	<tr>
+				    		<td class="td"> Н-426591 </td>
+				    		<td class="td"> Геннадий </td>
+				    		<td class="td"> 8-800-339-5240 </td>
+				    		<td class="td"> qpouros@yahoo.com </td>
+				    		<td class="td status">В работе</td>
+				    		<td class="td date">31.10.2021</td>
+				    	</tr>
+				    	<tr>
+				    		<td class="td"> К-426592 </td>
+				    		<td class="td"> Арсений </td>
+				    		<td class="td"> (812) 299-07-43 </td>
+				    		<td class="td"> torphy.jewel@wintheiser.com </td>
+				    		<td class="td status">Новая</td>
+				    		<td class="td date">01.11.2021</td>
+				    	</tr>
+				    	<tr>
+				    		<td class="td"> С-426593 </td>
+				    		<td class="td"> Марат </td>
+				    		<td class="td"> 8-800-837-8520 </td>
+				    		<td class="td"> jeanette.hilpert@hahn.com </td>
+				    		<td class="td status">Завершена</td>
+				    		<td class="td date">01.11.2021</td>
+				    	</tr>
+				    	<tr>
+				    		<td class="td"> С-426594 </td>
+				    		<td class="td"> Яна </td>
+				    		<td class="td"> 8-800-910-4896 </td>
+				    		<td class="td"> areilly@yahoo.com </td>
+				    		<td class="td status">В работе</td>
+				    		<td class="td date">02.11.2021</td>
+				    	</tr>
+				    	<tr>
+				    		<td class="td"> В-426595 </td>
+				    		<td class="td"> Ольга </td>
+				    		<td class="td"> 8(495) 493-6349 </td>
+				    		<td class="td"> jcartwright@cartwright.info </td>
+				    		<td class="td status">Новая</td>
+				    		<td class="td date">02.11.2021</td>
+				    	</tr>
+				    </tbody>
+				</table>
+		   </div>
+		</div>
+	</main>
+
+	<footer>
+		
+	</footer>
+</body>
+</html>

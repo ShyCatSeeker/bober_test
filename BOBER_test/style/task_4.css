@@ -1,0 +1,115 @@
+hr
+{
+	width: 65%;
+	margin: 30px;
+}
+
+span
+{
+	padding: 5px 5px 0 0;
+}
+
+.container
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 40px auto 0 auto;
+	max-width: 1296px;
+	font-family: 'RubikRegular';
+	font-size: 16px;
+}
+
+.table-row
+{
+	width: 65%;
+}
+
+.filter-row
+{
+	margin-top: 20px;
+	width: 65%;
+	display: inherit;
+	justify-content: flex-start;
+}
+
+.table
+{
+	width: 100%;
+	border: none;
+	border-collapse: collapse;
+	text-align: left;
+}
+
+.td
+{
+	border: 2px solid #7FC700;
+	padding: 5px;
+}
+
+.th-1
+{
+	background: #4EAD00;
+}
+
+.th-2
+{
+	background: #7FC700;
+}
+
+.th-1, .th-2
+{
+	padding: 10px;
+	border-radius: 10px 10px 0 0;
+}
+
+.btn-apply
+{
+	background: #4EAD00;
+	margin-right: 8px;
+}
+
+.btn-reset
+{
+	background: #7FC700;
+}
+
+.btn-apply, .btn-reset
+{
+	cursor: pointer;
+	border-radius: 5px;
+	font-family: inherit;
+	font-weight: bold;
+	width: 150px;
+	height: 30px;
+	border: none;
+}
+
+.input-status
+{
+	width: 220px;
+	height: 25px;
+	margin: 0 25px 0 0;
+}
+
+.input-date
+{
+	width: 200px;
+	height: 25px;
+	margin: 0 25px 0 0;
+}
+
+.select-date
+{
+	height: 27px;
+	width: 234px;
+}
+
+.input-status, .select-date, .input-date
+{
+	font-family: inherit;
+	border: 0.25px solid #7FC700;
+	border-radius: 5px;
+	padding-left: 10px;
+}
